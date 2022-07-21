@@ -4,6 +4,8 @@ import express, { application } from 'express';
 
 const server = express(); // This server is deaf
 
+server.use(cors());
+
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
     console.log(`Server listening on port: ${PORT}`)
